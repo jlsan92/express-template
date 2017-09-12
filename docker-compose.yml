@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    container_name: api
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    env_file: .env
+    networks:
+      - frontend
+      - backend
+    restart: always
+
+networks:
+  frontend:
+  backend:

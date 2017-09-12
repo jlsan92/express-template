@@ -1,0 +1,7 @@
+{
+  "environments": {
+    "development": "development",
+    "production": "production",
+    "test": "test"
+  }
+}

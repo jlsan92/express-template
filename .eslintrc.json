@@ -1,0 +1,20 @@
+{
+  "parserOptions" : {
+    "ecmaVersion" : 6,
+    "sourceType"  : "module",
+    "ecmaFeatures": {
+      "impliedStrict" : true
+    }
+  },
+  "env" : {
+    "node" : true,
+    "es6"  : true,
+    "amd"  : true,
+    "mocha": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "comma-dangle": "off"
+  },
+  "globals": {}
+}

@@ -1,0 +1,18 @@
+FROM node:8-alpine
+
+MAINTAINER Juan Sanchez <juansanchez@kogimobile.com>
+
+WORKDIR /usr/src/app
+
+COPY package.json package-lock.json ./
+
+RUN npm install --quiet pm2 -g && \
+npm install --quiet --only=prod
+
+RUN chown -R node: /usr/src/app
+
+USER node
+
+COPY . ./
+
+CMD ["pm2-docker", "development.json"]
