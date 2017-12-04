@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-MAINTAINER Juan Sanchez <juansanchez@kogimobile.com>
+LABEL maintainer="juan.sanchez1192@gmail.com"
 
 WORKDIR /usr/src/app
 
