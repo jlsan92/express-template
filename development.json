@@ -1,7 +1,7 @@
 {
   "apps" : [{
     "name": "express-template",
-    "script": "./app.js",
+    "script": "./index.js",
     "watch": true
   }]
 }
